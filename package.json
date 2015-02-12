@@ -1,0 +1,23 @@
+{
+  "name": "mercury-bootstrap",
+  "version": "0.0.0",
+  "description": "Implementation of bootstrap components with mercury",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ganemone/mercury-bootstrap.git"
+  },
+  "keywords": [
+    "mercury",
+    "bootstrap",
+    "javascript"
+  ],
+  "author": "Giancarlo Anemone",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/ganemone/mercury-bootstrap/issues"
+  }
+}

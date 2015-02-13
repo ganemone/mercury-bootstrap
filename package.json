@@ -4,6 +4,10 @@
   "description": "Implementation of bootstrap components with mercury",
   "main": "index.js",
   "scripts": {
+    "build": "browserify index.jsx -o dist/bundle.js",
+    "start": "watchify index.jsx -o dist/bundle.js",
+    "start-docs": "watchify docs/index.jsx -o docs/dist/bundle.js",
+    "build-docs": "browserify docs/index.jsx -o docs/dist/bundle.js",
     "test": "test"
   },
   "repository": {
@@ -19,5 +23,18 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/ganemone/mercury-bootstrap/issues"
+  },
+  "dependencies": {
+    "mercury": "~14.0.0",
+    "bootstrap": "~3.3.2"
+  },
+  "devDependencies": {
+    "mercury-jsxify": "~0.14.0",
+    "watchify": "~2.3.0"
+  },
+  "browserify": {
+    "transform": [
+      "mercury-jsxify"
+    ]
   }
 }
